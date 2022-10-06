@@ -1,0 +1,207 @@
+
+/* portfolio styling */
+.portfolio-container{
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:2.5rem;
+
+}
+.portfolio-item{
+    background: var(--color-primary);
+    padding: 1.3rem;
+    border-radius: 2rem;
+    border-radius: 1px solid transparent;
+    transition: var(--transition);
+}
+.portfolio-item:hover{
+    border-color: var(--color-primary-variant);
+    background: transparent;
+}
+.portfolio-item-img{
+    border-radius:1.5rem;
+    overflow:hidden;
+}
+.portfolio-item h3{
+    margin: 1.2 0 2rem
+}
+.portfolio-item-cta{
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* media query for 1024px */
+@media screen and (max-width:1024px){
+    .portfolio-container{
+        grid-template-columns:  1fr 1fr;
+        gap: 1.2rem;
+    }
+}
+
+@media screen and (max-width:600px){
+    .portfolio-container{
+        grid-template-columns:1fr;
+        gap:1.2rem;
+    }
+}
+
+/* tesstimonial styling */
+.my-testimonial{
+    padding:2rem;
+}
+
+.container.testimonial-container{
+    width: 40%;
+    padding-bottom: 4rem;
+}
+.client-avatar{
+    width: 4rem;
+    aspect-ratio: 1/1;
+    overflow:hidden;
+    border-radius: 50%;
+    margin: 0 auto 1rem;
+    border: 0.2rem solid var(--color-white);
+}   
+.client-testimonial{
+    background: var(--color-primary);
+    text-align: center;
+    padding: 2rem;
+    border-radius: 2rem;
+    user-selected: none;
+
+}
+.client-message{
+    color: light;
+    font-weight: 300;
+    display: block;
+    width: 80%;
+    margin: 0.8rem auto 0;
+}
+.swiper-pagination-clickable .swiper-pagination-bullet{
+    background: var(--color-white);
+}
+/* media query for 1024px */
+@media screen and (max-width:1024px){
+    .container.testimonial-container{
+        width: 60%;
+    }
+}
+/* 600px */
+@media screen and (max-width:600px) {
+    .container.testimonial-container{
+        width: var(--container-width-sm)
+    }
+}
+
+/* contact styling */
+
+
+.container.contact-container{
+    width: 58%;
+    display: grid;
+    grid-template-columns: 30% 58%;
+    gap: 12%;
+    margin-top:2rem;
+}
+.contact-options{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+.contact-option{
+    background: var(--color-bg-variant);
+    padding: 1.2rem;
+    border-radius: 1.2rem;
+    text-align: center;
+    border: 1px solid transparent;
+    transition: var(--transition);
+    overflow: hidden;
+}
+.contact-option:hover{
+    background: transparent;
+    border-color: var(--color-primary-variant);
+}
+.icon-class{
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.contact-option a{
+    margin:1.2rem;
+    display: block;
+    font-size: 0.8rem;
+    color: rgb(143, 138, 138);;
+}
+/* form */
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+input, textarea{
+    width: 100%;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    background: transparent;
+    border: 2px solid var(--color-light);
+    resize: none;
+    color: #ffff;
+    font-family: 'san serif';
+    font-size: large;
+}
+
+/* media queries */
+@media screen and (max-width:1024px){
+    .container.contact-container{
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
+
+@media screen and (max-width:600px){
+    .container.contact-container{
+        width: var(--container-width-lg);
+    }
+}
+
+
+/* footer styling */
+footer{
+    background:var(--color-primary);
+    text-align:center;
+    padding: 3rem;
+    font-size: 0.9rem;
+    margin-top: 7rem;
+}
+.footer-socials{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+.footer-socials a{
+    background-color: var(--color-light);
+    color: var(--color-bg);
+    padding: 0.8rem;
+    display: flex;
+    border:  1px solid transparent;
+}
+.footer-socials a:hover{
+    background: transparent;
+    color: var(--color-bg);
+    border-color: var(--color-light);
+}
+.footer-copyright{
+    font-size: 1.3rem;
+    margin-bottom: 4rem;
+    color: var(--color-white);
+}
+
+/* 600px */
+@media screen and (max-width:600px){
+    .footer-socials{
+        margin-bottom:3rem;
+    }
+}
